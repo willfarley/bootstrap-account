@@ -12,7 +12,7 @@ module "vpc" {
 
   name = "${var.vpc_name}"
   cidr = "${var.global_cidr}"
-  azs             = "${var.global_az}"0
+  azs             = "${var.global_az}"
   private_subnets = "${var.global_private_subnets}"
   public_subnets  = "${var.global_public_subnets}"
 

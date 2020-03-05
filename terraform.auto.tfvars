@@ -6,7 +6,7 @@ global_public_subnets  = ["10.0.20.0/24", "10.0.21.0/24", "10.0.22.0/24"]
 
 ##### Tag Variables #####
 tag_orchestration = "Terraform"
-tag_environment   = "Demo"
+tag_environment   = "willf-demo"
 tag_owner         = "willfarley"
 
 ##### VPC Variables #####

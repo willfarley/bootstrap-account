@@ -25,17 +25,17 @@ module "vpc" {
   }
 
 
-  ## Bastion
-  module "bastion" {
-    source = "git::ssh://git@github.com/willfarley/tf-bastion?ref=v1.0"
+## Bastion
+module "bastion" {
+  source = "git::ssh://git@github.com/willfarley/tf-bastion?ref=v1.0"
 
-    bastion_ami_id = "${var.bastion_ami_id}"
-    bastion_instance_type = "${var.bastion_instance_type}"
-    bastion_ssh_key_name = "${var.global_ssh_key_name}"
-    bastion_subnet_id = "${module.vpc.public_subnets[0]}"
-    bastion_vpc_id = "${module.vpc.vpc_id}"
-    bastion_ssh_ingress_cidr = "${var.bastion_ssh_ingress_cidr}"
+  bastion_ami_id = "${var.bastion_ami_id}"
+  bastion_instance_type = "${var.bastion_instance_type}"
+  bastion_ssh_key_name = "${var.global_ssh_key_name}"
+  bastion_subnet_id = "${module.vpc.public_subnets[0]}"
+  bastion_vpc_id = "${module.vpc.vpc_id}"
+  bastion_ssh_ingress_cidr = "${var.bastion_ssh_ingress_cidr}"
 
-    bastion_tag_environment = "${var.tag_environment}"
-    bastion_tag_orchestration = "${var.tag_orchestration}"
-  }
+  bastion_tag_environment = "${var.tag_environment}"
+  bastion_tag_orchestration = "${var.tag_orchestration}"
+}

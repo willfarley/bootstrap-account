@@ -48,3 +48,16 @@ variable "vpc_name" {
 variable "vpc_nat" {
   description = "Boolean for whether to add a NAT gateway to the VPC"
 }
+
+##### Bastion Variables #####
+variable "bastion_ami_id" {
+  default = "ami-00a1270ce1e007c27"
+}
+
+variable "bastion_instance_type" {
+  default = "t2.micro"
+}
+
+variable "bastion_ssh_ingress_cidr" {
+  description = "The ingress addresses to allow to the Bastion"
+}

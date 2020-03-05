@@ -12,3 +12,7 @@ output "private_subnets" {
   description = "The private subnets"
   value = "${module.vpc.private_subnets}"
 }
+
+output "bastion_sg" {
+  value = "${module.bastion.sg_id}"
+}

@@ -12,3 +12,6 @@ tag_owner = "willfarley"
 ##### VPC Variables #####
 vpc_nat = "false"
 vpc_name = "will-vpc"
+
+##### Bastion Variables #####
+bastion_ssh_ingress_cidr = "31.53.53.210/32"

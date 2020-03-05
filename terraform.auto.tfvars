@@ -14,4 +14,4 @@ vpc_nat  = "false"
 vpc_name = "will-vpc"
 
 ##### Bastion Variables #####
-bastion_ssh_ingress_cidr = "31.53.53.210/32"
+bastion_ssh_ingress_cidr = "81.156.23.249/32"

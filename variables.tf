@@ -5,22 +5,22 @@ variable "global_cidr" {
 
 variable "global_az" {
   description = "Global list of Availability Zones"
-  type = "list"
+  type        = "list"
 }
 
 variable "global_private_subnets" {
   description = "Global list of private subnets"
-  type = "list"
+  type        = "list"
 }
 
 variable "global_public_subnets" {
   description = "Global list of public subnets"
-  type = "list"
+  type        = "list"
 }
 
 variable "global_region" {
   description = "Region where to run Terraform in AWS"
-  default = "eu-west-2"
+  default     = "eu-west-2"
 }
 
 variable "global_ssh_key_name" {

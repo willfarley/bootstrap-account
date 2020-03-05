@@ -23,7 +23,7 @@ module "vpc" {
     Environment   = "${var.tag_environment}"
     Owner         = "${var.tag_owner}"
   }
-
+}
 
 ## Bastion
 module "bastion" {

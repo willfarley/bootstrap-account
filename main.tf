@@ -13,6 +13,7 @@ module "vpc" {
   name = "${var.vpc_name}"
   cidr = "${var.global_cidr}"
   azs             = "${var.global_az}"
+  enable_dns_hostnames = true
   private_subnets = "${var.global_private_subnets}"
   public_subnets  = "${var.global_public_subnets}"
 
